@@ -1,0 +1,13 @@
+algoritmo "Emprestimo"
+var
+   valor, parcelas, valor_e, valor_p, valor_t: real
+inicio
+      Escreva("Qual o valor do seu emprestimo? RS$")
+      Leia(valor)
+      Escreva("Quantas parcelas? ")
+      Leia(parcelas)
+      valor_e <- valor * 20 / 100
+      valor_p <- valor_e / parcelas
+      valor_t <- (valor + valor_e) / parcelas
+      Escreva(("Voce pagara "), parcelas, ("  parcelas no valor de RS$"), valor_t:4:2)
+fimalgoritmo
